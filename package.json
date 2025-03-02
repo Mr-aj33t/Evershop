@@ -1,0 +1,32 @@
+{
+    "name": "evershop",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "setup": "evershop install",
+        "build": "evershop build",
+        "start": "evershop start",
+        "start:debug": "evershop start --debug",
+        "dev": "evershop dev",
+        "migrate": "npx knex migrate:latest",
+        "user:changePassword": "evershop user:changePassword"
+    },
+    "author": "ajeet",
+    "license": "ISC",
+    "description": "Bytelogik task is to create an Evershop project utilizing the Neon database, and deploy it in Render.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mr-aj33t/Evershop.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Mr-aj33t/Evershop/issues"
+    },
+    "homepage": "https://github.com/Mr-aj33t/Evershop#readme",
+    "dependencies": {
+        "@evershop/evershop": "^1.2.2",
+        "evershop": "file:",
+        "knex": "^2.5.1",
+        "pg": "^8.11.3"
+    }
+}
